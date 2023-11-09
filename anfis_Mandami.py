@@ -101,7 +101,6 @@ class FuzzifyLayer(torch.nn.Module):
         return len(self.varmfs)
 
     @property
-    @property
     def max_mfs(self):
         ''' Return the max number of MFs in any variable'''
         return max([var.num_mfs for var in self.varmfs.values()])
@@ -435,6 +434,7 @@ class AnfisNet(torch.nn.Module):
             Forward pass: run x thru the five layers and return the y values.
             I save the outputs from each layer to an instance variable,
             as this might be useful for comprehension/debugging.
+            ALSO: see that the two 'easy' layers are integrated into the sequence.
         '''
         self.fuzzified = self.layer['fuzzify'](x)
         self.raw_weights = self.layer['rules'](self.fuzzified)
