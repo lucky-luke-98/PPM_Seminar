@@ -24,7 +24,7 @@ def metrics(dataset_name, columns_sel):
     y_test = pd.read_csv("dataset/"+dataset_name+"/"+dataset_name+"_test.csv")
     y_test = y_test[y_test.columns[-1]]
 
-    f = open(dataset_name+"_results.csv", "w")
+    f = open("results/"+dataset_name+"_results.csv", "w")
     f.write("SELECTED COLUMNS;"+"\n")
     for element in columns_sel:
         f.write(element + "\n")

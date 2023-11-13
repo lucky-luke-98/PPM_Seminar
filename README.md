@@ -59,4 +59,12 @@ and 4 folders:
     </ul>
 </ul>
 
+## Libraries that I need:
+<ul>
+    <li>python --version 3.6</li>
+    <li>(py)torch --version 1.8.1</li>
+    <li>tqdm --version ?</li>
+    <li>(json)pickle --version ?</li>
+</ul>
+
 ## Changes I did:

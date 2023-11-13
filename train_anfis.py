@@ -63,7 +63,7 @@ def train(dataset, n_feature, learning_rate, bs, columns_sel):
     model = make_anfis(x_train, num_mfs=3, num_out=2, hybrid=False)
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
     model, score = experimental.train_anfis_cat(model, train_data, val_data, optimizer,100)
-    torch.save(model, 'models/model_' + dataset + '.h5')
+    torch.save(model, 'models_lj/model_' + dataset + '.h5')
     load_model.metrics(dataset, columns_sel)
     return model
 
@@ -76,7 +76,7 @@ def opt(dataset, n_feature, learning_rate, bs, file_name, columns_sel):
     model, scores = experimental.train_anfis_cat(model, train_data, val_data, optimizer,100)
     return model, scores
 
-dataset_name = 'sepsis_cases_1'
+dataset_name = 'bpic2012_cancelled'
 
 if dataset_name == 'sepsis_cases_1':
         columns_sel = ['Diagnose', 'mean_open_cases', 'Age', 'std_Leucocytes', 'std_CRP']#sepsis_cases_1
