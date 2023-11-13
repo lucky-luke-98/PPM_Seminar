@@ -43,18 +43,17 @@ and 4 folders:
     <ul>
         <li>This folder includes .h5-files that are named according to datasets. It seems that these files specify the trained model.</li>
         <li>However, since the training of the NNs are part of the reconstruction, I should delete those files or create new ones.</li>
+	<li>Here, I created a new folder called: <i>models_lj</i>. </li>
     </ul>
     <li> <i>params</i> </li>
     <ul>
-        <li>This folder includes .p-files that are named according to datasets. It seems that these files specify the trained parameters of the models.</li>
-        <li>These are pickle-files!</li>
-        <li>However, since the training of the NNs are part of the reconstruction, I should delete those files or create new ones.</li>
-        <li><b>What is the difference between <i>models</i> and <i>params</i>?</b></li>
+        <li>This folder includes .p-files that are named according to datasets. It seems that these files specify the optimal hyperparameters of the datasets.</li>
+        <li>I might change these hyperparameters for my upcoming analysis</li>
     </ul>
     <li> <i>streamlit_fox</i> </li>
     <ul>
         <li>This folder seems to be a premature copy of the original file</li>
-        <li>Given the name of the folder, it seems that this folder is meant to simplify application in streamline.</li>
+        <li>Given the name of the folder, it seems that this folder is meant to simplify the application in streamline.</li>
         <li><b>deleted!</b></li> 
     </ul>
 </ul>
@@ -63,8 +62,13 @@ and 4 folders:
 <ul>
     <li>python --version 3.6</li>
     <li>(py)torch --version 1.8.1</li>
-    <li>tqdm --version ?</li>
-    <li>(json)pickle --version ?</li>
+    <li>tqdm --version (current_one)</li>
+    <li>(json)pickle --version (current_one)</li>
 </ul>
 
 ## Changes I did:
+
+<ul>
+    <li>changed some file-creation methods to other directories.</li>
+    <li>changed the training computation efforts to 'cpu'</li>	    
+</ul>
