@@ -1,0 +1,1 @@
+Note that some visualizations include 'green' dots as datapoints. These feature vectors were actually correctly classified. Thus, they may lay above the severeness threshold, though they do not count into the false classifications and are therefore not part of severe false classifications.

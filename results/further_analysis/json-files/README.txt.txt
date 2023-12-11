@@ -1,0 +1,1 @@
+Note that some datasets only have an empty list in bad_case_ids. This is due to the reason that there are not severe false classifications. The threshold of severness is too high for false classifications to be classified as a severe false case.

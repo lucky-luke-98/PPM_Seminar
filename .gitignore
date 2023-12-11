@@ -2,3 +2,4 @@ __pycache__/
 models/
 models_lj/
 dataset/
+.idea
