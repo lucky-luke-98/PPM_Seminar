@@ -4,7 +4,7 @@ Machine Learning Applications in Process Mining (SE) 💡 - winter semester 2023
 
 <img src="images/RWTH_Logo.png" width="500">
 
-This repository is an adapted copy of [FOX](https://github.com/vinspdb/FOX). This repository incorporates code of an explainable AI approach for Predictive Process Monitoring. In comparison to other approaches that use model agnostics, FOX uses an ad-hoc model to approach explainability. Its performance on benchmarks can be compared to those of simple machine learning approaches with similar levels of explainability.
+This repository is an adapted copy of [FOX](https://github.com/vinspdb/FOX). This repository incorporates code of an explainable AI approach for Predictive Process Monitoring. In comparison to other approaches that use model agnostics, FOX uses an ad-hoc model to approach explainability. Its performance on benchmark datasets can be compared to those of other machine learning approaches with similar levels of explainability.
 
 In the process of the above-stated seminar, I performed some changes and additions to the code. If you have questions about the code feel free to contact me under my mail: lukas.jaeschke@rwth-aachen.de.
 
@@ -18,7 +18,7 @@ In anfis_Mandami.py, membership.py, and experimental.py you can find the code th
 
 To train the model, I recommend you to use the datasets that were taken as benchmarks in the approach of FOX. You can download the needed csv-files at this link https://drive.google.com/drive/folders/1k4Ylxm0Ee1AisCvy52M9zbrLMS4zrL-g?usp=sharing
 
-Furthermore, I included four folders. The [params](params/) folder incorporates the best hyperparameters of the model with respect to the specific datasets. The [results](results/) folder includes the csv-files of the performance and further analysis files that I created during my assessment. [Literature](Literature/) includes descriptions of my approach.
+Furthermore, I included four folders. The [params](params/) folder incorporates the best hyperparameters of the model with respect to the specific benchmark datasets. The [results](results/) folder includes the csv-files of the performance and further analysis files that I created during my assessment. [Literature](Literature/) includes descriptions of my approach.
 
 ## Libraries for the code:
 <ul>
